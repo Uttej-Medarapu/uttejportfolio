@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Uttej</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- Navbar with blur effect -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">
+            <span class="text-primary">Uttej</span> Medarapu
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Achievements">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Particles Background -->
+<section class="hero container d-flex align-items-center justify-content-around text-center text-md-start py-5" id="Home">
+    <div class="hero-text" data-aos="fade-right">
+        <h3 class="fw-light">Hello, I'm</h3>
+        <h2 class="fw-bold">Uttej Medarapu</h2>
+        <p class="fs-4">A Dedicated <strong class="text-success">Full Stack Developer</strong></p>
+        <p class="text-muted">Crafting responsive and innovative web solutions with modern technologies.</p>
+        
+        <!-- Social Media Links -->
+        <div class="social-icons mb-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="https://github.com/Uttej-Medarapu" target="_blank" class="social-icon github">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/uttej-34276a29b/" target="_blank" class="social-icon linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:uttejmedarapu511@gmail.com" class="social-icon email">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="tel:+917386759345" class="social-icon phone">
+                <i class="bi bi-telephone-fill"></i>
+            </a>
+        </div>
+
+        <div class="mt-4">
+            <a href="#Contact" class="btn btn-primary me-3 shadow-lg">
+                <i class="bi bi-person-workspace"></i> Hire Me
+            </a>
+            <a href="./assets/UTTEJ_M_RESUME.pdf" class="btn btn-outline-success shadow-lg" download>
+                <i class="bi bi-file-earmark-text"></i> Download Resume
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-image position-relative d-none d-md-flex" data-aos="fade-left">
+        <img src="./assets/profilepic.JPG" alt="Profile Image" 
+                class="img-fluid rounded-circle shadow-lg profile-img">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="About" class="container py-5 px-3">
+    <div class="row justify-content-center align-items-center">
+        <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">
+            About <span class="text-primary">Me</span>
+        </h2>
+
+        <div class="col-md-4 text-center mb-4 me-md-5" data-aos="fade-right">
+            <img src="./assets/uttej_UASC_speech.jpg" class="square-img" alt="Profile Image">
+        </div>
+
+        <div class="col-md-6 text-center text-md-start ps-md-4" data-aos="fade-left">
+            <p class="fs-5 text-muted lh-lg">
+                I'm a passionate Full Stack Developer focused on creating impactful digital solutions that combine creativity with technical excellence.
+            </p>
+
+            <div class="mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <p><i class="bi bi-person-circle text-primary me-2"></i> <strong>Name:</strong> Uttej Medarapu</p>
+                        <p><i class="bi bi-calendar text-primary me-2"></i> <strong>Birthday:</strong> January 05, 2001</p>
+                        <p><i class="bi bi-geo-alt text-primary me-2"></i> <strong>Location:</strong> Suryapet, Telangana</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p><i class="bi bi-envelope text-primary me-2"></i> <strong>Email:</strong> uttejmedarapu511@gmail.com</p>
+                        <p><i class="bi bi-phone text-primary me-2"></i> <strong>Phone:</strong> 7386759345</p>
+                        <p><i class="bi bi-pin-map text-primary me-2"></i> <strong>PIN:</strong> 508213</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="./assets/UTTEJ_M_RESUME.pdf" class="btn btn-primary btn-lg px-4 mt-4" download>
+                <i class="bi bi-download me-2"></i> Download Resume
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="Skills" class="container-fluid py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">My <span class="text-primary">Skills</span></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+    <div class="blog-card">
+        <img src="./assets/web dev.jpeg" alt="Web Development">
+        <div class="blog-content">
+                        <h3 class="h4 mb-3">Web Development</h3>
+                        <p class="text-muted">Creating responsive and dynamic websites with modern frameworks and tools.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">HTML5</span>
+                            <span class="badge bg-primary me-2">CSS3</span>
+                            <span class="badge bg-primary me-2">JS</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                    </div>
+        </div>
+    </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="blog-card">
+        <img src="./assets/python dev.jpeg" alt="Python Programming">
+        <div class="blog-content">
+                        <h3 class="h4 mb-3">Python Programming</h3>
+                        <p class="text-muted">Building robust applications and data science solutions with Python.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-success me-2">Python</span>
+                            <span class="badge bg-success me-2">Flask</span>
+                            <span class="badge bg-success me-2">NumPy</span>
+                        </div>
+                    </div>
+        </div>
+    </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+    <div class="blog-card">
+        <img src="./assets/pt2.jpeg" alt="Performance Testing">
+        <div class="blog-content">
+                        <h3 class="h4 mb-3">Performance Testing</h3>
+                        <p class="text-muted">Ensuring optimal system performance under various load conditions.</p>
+                        <div class="mt-3">
+                            <span class="badge bg-warning text-dark me-2">JMeter</span>
+                            <span class="badge bg-warning text-dark me-2">LoadRunner</span>
+                            
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="Projects" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">My <span class="text-primary">Projects</span></h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100">
+            <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="bi bi-check-circle-fill text-primary" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">To-Do List Web App</h5>
+                    <p class="card-text text-muted">A responsive To-Do List application using HTML, CSS, and JavaScript to manage daily tasks efficiently.</p>
+                    <a href="http://todolistuttej.netlify.app" class="btn btn-primary mt-3">
+                        <i class="bi bi-eye me-2"></i>View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="bi bi-person-badge text-primary" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Portfolio Website</h5>
+                    <p class="card-text text-muted">A personal portfolio website showcasing skills, projects, and achievements using Bootstrap and HTML/CSS.</p>
+                    <a href="https://uttej.netlify.app/" class="btn btn-primary mt-3">
+                        <i class="bi bi-eye me-2"></i>View Project
+                    </a>
+    </div>
+            </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="bi bi-calculator text-primary" style="font-size: 2rem;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold mb-3">Calculator</h5>
+                    <p class="card-text text-muted">A feature-rich calculator application with a clean interface for basic and advanced calculations.</p>
+                    <a href="https://uttejcalculator.netlify.app/" class="btn btn-primary mt-3">
+                        <i class="bi bi-eye me-2"></i>View Project
+                    </a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="container py-5 bg-light">
+    <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">My <span class="text-primary">Certificates</span></h2>
+    <div class="row justify-content-center g-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card shadow h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-4">
+                        <i class="bi bi-award text-success" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold text-success">Python</h5>
+                    <p class="card-text">Certified in Python programming from BESANT TECHNOLOGIES.</p>
+    </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="card shadow h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-4">
+                        <i class="bi bi-award text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h5 class="card-title fw-bold text-primary">Web Development</h5>
+                    <p class="card-text">Certified in web development from CODEGNAN DESTINATION IT SOLUTION.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="card shadow h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-4">
+                        <i class="bi bi-award text-warning" style="font-size: 2.5rem;"></i>
+                    </div>
+                <h5 class="card-title fw-bold text-warning">Manual Testing</h5>
+                    <p class="card-text">Certified in Manual Testing from TECK VISION IT SOLUTIONS.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="card shadow h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-4">
+                        <i class="bi bi-award text-danger" style="font-size: 2.5rem;"></i>
+                    </div>
+                <h5 class="card-title fw-bold text-danger">Performance Testing</h5>
+                    <p class="card-text">Certified in Performance Testing from TECK VISION IT SOLUTIONS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="Achievements" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">My <span class="text-primary">Achievements</span></h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+<div class="blog-card">
+    <img src="./assets/english carnival.jpg" alt="English Carnival">
+    <div class="blog-content">
+                    <h3 class="h4 mb-3">English Carnival</h3>
+                    <p class="text-muted">Secured first prize in the English Carnival competition hosted by MEO.</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+    </div>
+</div>
+
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+<div class="blog-card">
+    <img src="./assets/ozone day.jpg" alt="Ozone Day">
+    <div class="blog-content">
+                    <h3 class="h4 mb-3">Ozone Day Celebration</h3>
+                    <p class="text-muted">Received special recognition certificate from DEO for Ozone Day activities.</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+    </div>
+</div>
+
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+<div class="blog-card">
+    <img src="./assets/nmms.jpeg" alt="NMMS">
+    <div class="blog-content">
+                    <h3 class="h4 mb-3">NMMS Qualifier</h3>
+                    <p class="text-muted">Successfully qualified NMMS, demonstrating excellence in academics and reasoning.</p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="Contact" class="container-fluid py-5 bg-light">
+<div class="container">
+        <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">Get in <span class="text-primary">Touch</span></h2>
+
+        <div class="row justify-content-center g-4">
+            <!-- Contact Information -->
+            <div class="col-md-5" data-aos="fade-right">
+                <div class="card p-4 shadow border-0 h-100">
+                    <h3 class="h4 mb-4 text-primary">Contact Information</h3>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary p-2 rounded-circle me-3">
+                            <i class="bi bi-geo-alt text-white"></i>
+                        </div>
+                    <div>
+                            <h6 class="mb-0">Address</h6>
+                        <p class="text-muted mb-0">Suryapet, Telangana</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-primary p-2 rounded-circle me-3">
+                            <i class="bi bi-envelope text-white"></i>
+                </div>
+                    <div>
+                            <h6 class="mb-0">Email</h6>
+                            <p class="text-muted mb-0">
+                                <a href="mailto:uttejmedarapu511@gmail.com" class="text-decoration-none">uttejmedarapu511@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary p-2 rounded-circle me-3">
+                            <i class="bi bi-telephone text-white"></i>
+                </div>
+                    <div>
+                            <h6 class="mb-0">Phone</h6>
+                        <p class="text-muted mb-0">+91 7386759345</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-7" data-aos="fade-left">
+            <div class="card p-4 shadow border-0">
+                    <form id="contactForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Your Phone">
+                        </div>
+                        <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <!-- Social Media Links -->
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="https://github.com/Uttej-Medarapu" target="_blank" class="btn btn-dark me-3 rounded-circle">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/uttej-34276a29b/" target="_blank" class="btn btn-primary rounded-circle">
+                <i class="bi bi-linkedin"></i>
+        </a>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="footer-top py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="text-white mb-4">About Me</h3>
+                        <p class="text-light mb-4">A passionate Full Stack Developer focused on creating impactful digital solutions with modern technologies.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Uttej-Medarapu" class="me-3" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/uttej-34276a29b/" class="me-3" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="mailto:uttejmedarapu511@gmail.com">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#Home"><i class="bi bi-chevron-right"></i> Home</a></li>
+                            <li><a href="#About"><i class="bi bi-chevron-right"></i> About</a></li>
+                            <li><a href="#Skills"><i class="bi bi-chevron-right"></i> Skills</a></li>
+                            <li><a href="#Projects"><i class="bi bi-chevron-right"></i> Projects</a></li>
+                            <li><a href="#Contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="text-white mb-4">Contact Info</h3>
+                        <div class="contact-info">
+                            <p class="d-flex align-items-center mb-3">
+                                <i class="bi bi-geo-alt me-3"></i>
+                                <span>Suryapet, Telangana, India</span>
+                            </p>
+                            <p class="d-flex align-items-center mb-3">
+                                <i class="bi bi-phone me-3"></i>
+                                <span>+91 7386759345</span>
+                            </p>
+                            <p class="d-flex align-items-center mb-3">
+                                <i class="bi bi-envelope me-3"></i>
+                                <span>uttejmedarapu511@gmail.com</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Uttej Medarapu. All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#Home" class="btn btn-outline-light rounded-circle back-to-top">
+                        <i class="bi bi-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+
+    // Active nav link
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+    });
+</script>
+</body>
+</html>
