@@ -1,0 +1,19 @@
+{
+    "name": "Uttej Medarapu",
+    "short_name": "Uttej",
+    "icons": [
+        {
+            "src": "/assets/profilepic.JPG",
+            "sizes": "192x192",
+            "type": "image/jpg"
+        },
+        {
+            "src": "/assets/profilepic.JPG",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ],
+    "theme_color": "#4f46e5",
+    "background_color": "#ffffff",
+    "display": "standalone"
+} 
